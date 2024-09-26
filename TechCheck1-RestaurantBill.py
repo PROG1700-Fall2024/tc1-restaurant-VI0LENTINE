@@ -10,14 +10,15 @@
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
-
-
-
-
-
-
-
-
+    user = input("Please put in your original bill amount: ")
+    bill = float(user)
+    tax = bill * 0.15
+    tip = bill * 0.20
+    total = bill + tax + tip
+    print("Your original bill amount is: ", bill)
+    print("Your tax is: ", round(tax,2))
+    print("Your tip is: ", round(tip,2))
+    print("Your total is: ", round(total,2))
     # YOUR CODE ENDS HERE
 
 main()
